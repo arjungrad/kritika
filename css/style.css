@@ -75,3 +75,8 @@ h4 {
   }
 }
 
+@media (max-width: 55em) {
+  .links {
+    margin-bottom: 40px; /* Add margin to create a gap below the links on small screens */
+  }
+}
