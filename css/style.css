@@ -46,36 +46,41 @@ h1, h2, h3, h4 {text-align:center;}
   margin-top: 20px;
 }
 
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .links a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #f2f2f2;
-  color: #333333;
-  text-decoration: none;
-  border: 2px solid #333333;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #333333;
+    text-decoration: none;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .links a:hover {
-  background-color: #333333;
-  color: #f2f2f2;
+    background-color: #333333;
+    color: #f2f2f2;
 }
 
-
-
-
-
-  .GeneratedText {
-    font-family:'Comic Sans MS';
+.GeneratedText {
+    font-family: 'Comic Sans MS';
     font-size: 1.25em;
     font-style: italic;
     font-weight: bold;
     letter-spacing: 0.2em;
     line-height: 1.3em;
-    color: #FFFFFF;
+    color: #ffffff;
+    text-align: center;
     padding: 1.5em;
-    max-width: 50%; /* Adjust this value to your desired width */
-    margin: 0 auto; /* Centers the text horizontally */
-    text-align: center; /* Centers the text vertically with respect to the upper line */
-
+    max-width: 80%;
+    margin: 0 auto;
+}
