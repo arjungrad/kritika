@@ -80,3 +80,21 @@ h4 {
     margin-bottom: 40px; /* Add margin to create a gap below the links on small screens */
   }
 }
+
+.beautiful-text {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 1.25rem; /* Adjust as needed */
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: normal; /* Default weight for Comic Sans */
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+/* Optional: Adds a hover effect */
+.beautiful-text:hover {
+  color: #f0f0f0;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
