@@ -90,6 +90,10 @@ h4 {
   letter-spacing: 0.5px;
   line-height: 1.5;
   transition: color 0.3s ease;
+  max-width: 90%; /* Adjust this value to your desired width */
+  margin: 0 auto; /* Centers the text horizontally */
+  text-align: center; /* Centers the text vertically with respect to the upper line */
+}
 }
 
 /* Optional: Adds a hover effect */
