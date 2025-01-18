@@ -17,12 +17,31 @@ h4 {
   text-align: center;
 }
 
-.resright {
-  max-height: 300px;
-  max-width: 90%;
-  margin: auto;
-  display: block;
+.image-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
+.reverse {
+  flex-direction: row-reverse;  /* For right-side images */
+}
+
+.resmid, .resright {
+  width: 400px;
+  height: 600px; /* Ensure the images are the same size */
+  object-fit: cover; /* Maintain aspect ratio, covering the box */
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .resmid, .resright {
+    width: 100%; /* Make images responsive on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
 
 /* Updated CSS code */
 .links {
@@ -63,17 +82,6 @@ h4 {
   text-align: center; /* Centers the text vertically with respect to the upper line */
 }
 
-@media (min-width: 55em) {
-  .resright,
-  .disappear {
-    display: block;
-    float: right;
-    padding: 20px;
-    clear: both;
-    max-height: 300px;
-    max-width: 300px;
-  }
-}
 
 @media (max-width: 55em) {
   .links {
@@ -90,10 +98,6 @@ h4 {
   letter-spacing: 0.5px;
   line-height: 1.5;
   transition: color 0.3s ease;
-  max-width: 90%; /* Adjust this value to your desired width */
-  margin: 0 auto; /* Centers the text horizontally */
-  text-align: center; /* Centers the text vertically with respect to the upper line */
-}
 }
 
 /* Optional: Adds a hover effect */
@@ -101,4 +105,14 @@ h4 {
   color: #f0f0f0;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
+
+
+.special-resright {
+  width: 400px;         /* Set width */
+  height: 280px;        /* Set height */
+  object-fit: cover;    /* Ensure the image covers the area without stretching */
+  margin: auto;
+  display: block;
+}
+
 
